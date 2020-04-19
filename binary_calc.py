@@ -9,11 +9,7 @@ def binaryToDecimal():
     
     
     powers = [x for x in range(0,len(binary_number_list_reverse))] # creating a list of powers
-    
-    len_powers = len(powers)
-    
-    print(len(powers) - 1)
-    
+   
     counter = 0
     
     decimal_list = []
