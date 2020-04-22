@@ -30,14 +30,7 @@ def HappyNumbers():
                         print("Number {} is a happy number".format(original_number))
                         counter += 1
                         print(results)
-                        
-                        reply = input("Do you want to try again? Y / N ")
-                    
-                        if reply.lower().startswith("y"):
-                            continue
-                        else:
-                            print("Bye!")
-                            break
+                        break
 
                     else:    # if the sum of squared digits (new_number) != 1 try again and increase the counter
                         counter += 1
@@ -48,13 +41,14 @@ def HappyNumbers():
                 else:    # if after 20 tries the sum of the squared digits != 1 ---> the original number is not happy 
                     print("Number {} is not happy number".format(original_number))
                     
-                    reply = input("Do you want to try again? Y / N ")
-                    
-                    if reply.lower().startswith("y"):
-                        continue
-                    else:
-                        print("Bye!")
-                        break
+            
+            reply = input("do you want to play again? Y / N ")
+            
+            if reply.lower().startswith("y"):
+                continue
+            else:
+                print("Bye!")
+                break
                     
                     
             
